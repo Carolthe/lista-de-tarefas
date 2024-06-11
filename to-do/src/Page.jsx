@@ -3,9 +3,12 @@ import Logo from "./img/Logo.png"
 
 
 export default function Page(props) {
+
+    const pessoa = ["ju", "ju"]
+    console.log(pessoa.length)
     
 const [inputText, setInputText] = useState('')
-const [inputText2, setInputText2] = useState('')
+// const [inputText2, setInputText2] = useState('')
     
 
     //  let getTarefa = localStorage.getItem("tarefa") !== null ? tarefa : []
@@ -14,22 +17,18 @@ const [inputText2, setInputText2] = useState('')
     //  }
     const handleInputChange = (tarefa) => {
         setInputText(tarefa.target.value)
-        setInputText2(tarefa.target.value)
-        console.log(inputText, inputText2)
+        // setInputText2(tarefa.target.value)
+        console.log(inputText, inputText)
     }
 
 
     const handleButtonClick = () => {
         props.atualizar(true)
-        let tarefa = [{
+        let tarefa = {
             concluida: false,
             nomeTarefa: inputText,
-          },
-        {
-            concluida: false,
-            nomeTarefa2: inputText2,
-        }
-    ]
+          }
+
         console.log("Tarefa do dia:", inputText)
         localStorage.setItem ("tarefa", JSON.stringify(tarefa))
     }
