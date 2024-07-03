@@ -17,10 +17,9 @@ const [inputText, setInputText] = useState('')
     //  }
     const handleInputChange = (tarefa) => {
         setInputText(tarefa.target.value)
-        // setInputText2(tarefa.target.value)
+    
         console.log(inputText, inputText)
     }
-
 
     const handleButtonClick = () => {
         props.atualizar(true)
