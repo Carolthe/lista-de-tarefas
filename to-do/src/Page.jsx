@@ -1,20 +1,13 @@
 import { useState } from "react"
 import Logo from "./img/Logo.png"
 
-
 export default function Page(props) {
 
     const pessoa = ["ju", "ju"]
     console.log(pessoa.length)
     
 const [inputText, setInputText] = useState('')
-// const [inputText2, setInputText2] = useState('')
-    
 
-    //  let getTarefa = localStorage.getItem("tarefa") !== null ? tarefa : []
-
-    //   const tarefaObject = JSON.parse(getTarefa)
-    //  }
     const handleInputChange = (tarefa) => {
         setInputText(tarefa.target.value)
     
@@ -32,9 +25,7 @@ const [inputText, setInputText] = useState('')
         localStorage.setItem ("tarefa", JSON.stringify(tarefa))
     }
 
-   
     return (
-
         <div className="flex flex-col justify-center items-center bg-gray-700 h-52">
             <img className=" mt-20 " src={Logo} alt="logo" />
             <div className="mt-12 flex justify-center ">
