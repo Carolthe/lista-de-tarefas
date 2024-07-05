@@ -26,7 +26,7 @@ const [inputText, setInputText] = useState('')
     }
 
     return (
-        <div className="flex flex-col justify-center items-center bg-gray-700 h-52">
+        <div className="flex flex-col justify-center items-center bg-gray-700 h-52 ">
             <img className=" mt-20 " src={Logo} alt="logo" />
             <div className="mt-12 flex justify-center ">
                 <input className="w-screen max-w-2xl h-12 px-6 rounded-lg bg-gray-400 shadow-2xl text-white"
