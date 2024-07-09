@@ -35,7 +35,6 @@ const [inputText, setInputText] = useState('')
                     onChange={handleInputChange}
                     placeholder="Adicione uma nova tarefa" />
                 <button onClick={handleButtonClick} className=" ml-5 h-12 w-16 rounded-lg bg-blue text-white shadow-2xl"> Criar </button>
-
             </div>
         </div>
     )

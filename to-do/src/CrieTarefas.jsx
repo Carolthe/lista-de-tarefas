@@ -7,8 +7,6 @@ export default function CrieTarefas(){
         <div>
         <div className="flex justify-center mt-4">
             <hr className="w-screen max-w-3xl border-gray-400"/>
-        
- 
         </div>
         <div className="flex justify-center mt-16">
             
