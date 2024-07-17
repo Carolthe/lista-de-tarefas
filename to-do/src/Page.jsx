@@ -3,7 +3,7 @@ import Logo from "./img/Logo.png"
 
 export default function Page(props) {
 
-    const pessoa = ["ju", "ju"]
+    const pessoa = []
     console.log(pessoa.length)
     
 const [inputText, setInputText] = useState('')
